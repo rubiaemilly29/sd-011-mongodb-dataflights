@@ -1,1 +1,1 @@
-db.voos.find({ decolagens: { $gt: 20 } }).count();
+db.voos.find({ "aeroportoOrigem.pais": { $not: /BRASIL/ } }).count();
