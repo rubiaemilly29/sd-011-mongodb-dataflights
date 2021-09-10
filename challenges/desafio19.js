@@ -3,11 +3,11 @@
 db.voos
   .find(
     {
-      litrosCombustivel: { $exists: true }
+      litrosCombustivel: { $exists: true },
     },
     {
       _id: 0,
-      vooId: 1
-    }
+      vooId: 1,
+    },
   )
   .limit(1);

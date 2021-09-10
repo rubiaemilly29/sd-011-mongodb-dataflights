@@ -1,6 +1,6 @@
 // use("dataFlights");
 db.voos
   .find({
-    natureza: "Doméstica"
+    natureza: "Doméstica",
   })
   .count();

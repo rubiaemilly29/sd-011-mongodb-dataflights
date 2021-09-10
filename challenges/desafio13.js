@@ -1,6 +1,6 @@
 // use("dataFlights");
 db.voos
   .find({
-    "aeroportoDestino.continente": { $nin: ["EUROPA", "ÁSIA", "OCEANIA"] }
+    "aeroportoDestino.continente": { $nin: ["EUROPA", "ÁSIA", "OCEANIA"] },
   })
   .count();

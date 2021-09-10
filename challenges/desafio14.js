@@ -1,6 +1,6 @@
 // use("dataFlights");
 db.voos
   .find({
-    "aeroportoOrigem.pais": { $nin: ["BRASIL"] }
+    "aeroportoOrigem.pais": { $nin: ["BRASIL"] },
   })
   .count();
