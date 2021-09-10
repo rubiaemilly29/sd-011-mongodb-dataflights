@@ -1,6 +1,6 @@
 db.voos.find(
   {
-    "aeroportoPartida.pais": 
+    "aeroportoOrigem.pais": 
     { 
       $nin: 
       ["BRASIL"],
