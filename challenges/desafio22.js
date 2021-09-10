@@ -6,7 +6,7 @@ db.voos.findOne({
       { $or: 
       [
         { "empresa.nome": { $eq: "DELTA AIRLINES" } },
-        { "empresa.nome": { $eq: "AMERICAN AIRLINES" } }
-      ] } 
+        { "empresa.nome": { $eq: "AMERICAN AIRLINES" } },
+      ] },
   ] },
 { vooId: 1, _id: 0 });
