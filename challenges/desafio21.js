@@ -1,9 +1,7 @@
 db.voos.find(
   {
-    rtk: {
-      $not: {
-        $exists: true,
-      },
+    litrosCombustivel: {
+      $gte: 1000,
     },
   },
   {
