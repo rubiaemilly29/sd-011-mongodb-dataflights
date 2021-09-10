@@ -4,4 +4,4 @@ empresa: LATAM,
 totalVoosDomesticos: db.voos.find({
 "empresa.nome": LATAM,
 natureza: "Doméstica" }).count() });
-db.resumoVoos.find({ empresa: LATAM });
+db.resumoVoos.find({ empresa: LATAM }, { _id: 0, empresa: 1, totalVoosDomesticos: 1 });
