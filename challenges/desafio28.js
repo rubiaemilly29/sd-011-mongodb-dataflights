@@ -8,4 +8,8 @@ db.resumoVoos.insertMany([
    },
  ]);
 
-db.resumoVoos.find({ empresa: { $eq: "LATAM AIRLINES BRASIL" } }, { empresa: 1, totalVoosDomesticos: 1, _id: 0})
+db.resumoVoos.find({ empresa: { $eq: "LATAM AIRLINES BRASIL" } },
+{ 
+empresa: 1,
+totalVoosDomesticos: 1,
+_id: 0} );
