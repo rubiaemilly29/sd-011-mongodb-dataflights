@@ -1,5 +1,5 @@
 db.voos.find({
-vooId: 756807 
+vooId: 756807,
 },
 {
 _id: 0,

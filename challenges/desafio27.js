@@ -2,8 +2,8 @@ db.resumoVoos.insertMany([
 {  
 "empresa": "PASSAREDO",
 "totalVoosDomesticos": db.voos.find( { $and: [
-{ "empresa.nome": { $eq: "PASSAREDO", } }, 
-{"natureza": { $eq: "Doméstica", } }] } ).count()
+{ "empresa.nome": { $eq: "PASSAREDO" } }, 
+{ "natureza": { $eq: "Doméstica" } }] } ).count()
 },
 ]);
   
