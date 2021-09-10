@@ -1,6 +1,8 @@
 db.voos.find({ 
-litrosCombustivel: { $lt: 600, },
-"empresa.nome": { $in: ["GOL", "AZUL" ]},
+litrosCombustivel: {
+$lt: 600,
+},
+"empresa.nome": { $in: ["GOL", "AZUL"] },
 },
 {
 _id: 0,
