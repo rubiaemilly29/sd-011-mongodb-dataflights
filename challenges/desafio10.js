@@ -1,4 +1,5 @@
-db.voos.find({ "empresa.nome": "GOL", ano: 2017 }, { vooID: 1,
+db.voos.find({ "empresa.nome": "GOL", ano: 2017 }, { _id: 0,
+vooID: 1,
 "empresa.nome": 1,
 "aeroportoOrigem.nome": 1,
 "aeroportoDestino.nome": 1,
