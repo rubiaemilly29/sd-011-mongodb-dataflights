@@ -2,7 +2,7 @@ db.voos.find({
   $and: [
     { "empresa.nome": "GOL" },
     { ano: 2017 },
-  ]
+  ],
 }, {
   _id: 0,
   vooId: 1,
