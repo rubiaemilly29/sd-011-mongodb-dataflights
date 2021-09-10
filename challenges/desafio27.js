@@ -8,7 +8,7 @@ totalVoosDomesticos: db.voos.find({ $and: [
 ]);
   
 db.resumoVoos.find({
-empresa: { $eq: "PASSAREDO" }
+empresa: { $eq: "PASSAREDO" },
 },
 { 
 empresa: 1,

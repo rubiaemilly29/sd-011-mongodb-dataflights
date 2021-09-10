@@ -1,4 +1,3 @@
-use('dataFlights');
 db.resumoVoos.insertMany([
   {  
    "empresa": "LATAM AIRLINES BRASIL",
