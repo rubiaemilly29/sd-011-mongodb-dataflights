@@ -6,4 +6,4 @@ db.resumoVoos.insertOne({
   }).count(),
 });
 
-db.resumoVoos.find({}, { _id: 0 });
+db.resumoVoos.find({ empresa: "PASSAREDO" }, { _id: 0 });
