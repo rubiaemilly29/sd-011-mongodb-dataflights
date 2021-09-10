@@ -1,1 +1,1 @@
-db.voos.deleteMany({litrosCombustivel: {$lt: 400}});
+db.voos.deleteMany({ litrosCombustivel: { $lt: 400 } });
