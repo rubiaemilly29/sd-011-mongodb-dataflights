@@ -1,4 +1,3 @@
 use ("dataFlights")
-db.voos.findOne({ "empresa.nome": { $or [{ $eq: "DELTA AIRLINES" },{ $eq: "AMERICAN AIRLINES" }]},
-"aeroportoOrigem.sigla": "SBGR", "aeroportoDestino.sigla": "KJFK" },
-{ _id: 0, vooId: 1 });
+db.voos.findOne({ litrosCombustivel: { $lt: 1000}, { $exists: true} },
+{ _id: 0, vooId: 1, litrosCombustivel: 1 });
