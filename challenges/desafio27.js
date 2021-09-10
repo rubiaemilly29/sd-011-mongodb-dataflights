@@ -8,7 +8,8 @@ totalVoosDomesticos: db.voos.find({ $and: [
 ]);
   
 db.resumoVoos.find({
-empresa: { $eq: "PASSAREDO", }},
+empresa: { $eq: "PASSAREDO" }
+},
 { 
 empresa: 1,
 totalVoosDomesticos: 1,
@@ -16,5 +17,5 @@ _id: 0,
 });
 
 db.resumoVoos.deleteMany({
-empresa: { $eq: "PASSAREDO", }
+empresa: { $eq: "PASSAREDO" },
 });
