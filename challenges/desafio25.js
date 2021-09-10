@@ -1,4 +1,4 @@
-db.voos.count().deleteMany({
+db.voos.deleteMany({
   $and: [
     { "empresa.nome": "AZUL" },
     { litrosCombustivel: { $lt: 400 } },
