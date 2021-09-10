@@ -1,2 +1,2 @@
-db.voos.find({"empresa.nome": "AZUL"}).limit(10).count();
+db.voos.find({"empresa.nome": "AZUL"}).count();
 
