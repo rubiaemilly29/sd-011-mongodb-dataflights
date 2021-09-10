@@ -1,11 +1,13 @@
+const latam = "LATAM AIRLINES BRASIL";
+
 db.resumoVoos.insertMany([
   {  
-  empresa: "LATAM AIRLINES BRASIL",
+  empresa: latam,
   totalVoosDomesticos: db.voos.find({ $and: [
-    { "empresa.nome": { $eq: "LATAM AIRLINES BRASIL" } }, 
-    { natureza: { $eq: "Doméstica" } }] }).count()
+    { "empresa.nome": { $eq: latam } }, 
+    { natureza: { $eq: "Doméstica" } }] }).count(),
   },
 ]);
 
-db.resumoVoos.find({ empresa: { $eq: "LATAM AIRLINES BRASIL" } },
-  { empresa: 1, totalVoosDomesticos: 1, _id: 0})
+db.resumoVoos.find({ empresa: { $eq: latam } },
+  { empresa: 1, totalVoosDomesticos: 1, _id: 0 });
