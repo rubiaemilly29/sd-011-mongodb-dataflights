@@ -1,0 +1,9 @@
+db.voos.find(
+  {
+    "aeroportoPartida.pais": 
+    { 
+      $nin: 
+      ["BRASIL"],
+    },
+  },
+).count();
