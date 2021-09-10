@@ -8,7 +8,6 @@ db.resumoVoos.insertMany([
 ]);
 
 db.resumoVoos.find({ empresa: { $eq: "PASSAREDO" } },
-  { empresa: 1, totalVoosDomesticos: 1, _id: 0 },
-);
+  { empresa: 1, totalVoosDomesticos: 1, _id: 0 });
 
 db.resumoVoos.deleteMany({ empresa: { $eq: "PASSAREDO" } });
