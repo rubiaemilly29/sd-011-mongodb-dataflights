@@ -5,4 +5,4 @@ db.resumoVoos.insertOne({
   ] }).count(),
 });
 
-db.resumoVoos.findOne({}, { empresa: 1, totalVoosDomesticos: 1, _id: 0 });
+db.resumoVoos.findOne({ empresa: "PASSAREDO" }, { empresa: 1, totalVoosDomesticos: 1, _id: 0 });
