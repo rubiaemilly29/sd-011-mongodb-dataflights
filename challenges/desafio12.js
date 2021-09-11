@@ -3,6 +3,7 @@ db.voos.count(
     [
       { "aeroportoDestino.pais": "BRASIL" },
       { "aeroportoDestino.pais": "ARGENTINA" },
-      {"aeroportoDestino.pais": "CHILE"}
-    ]
-});
+      { "aeroportoDestino.pais": "CHILE" },
+    ],
+  },
+);

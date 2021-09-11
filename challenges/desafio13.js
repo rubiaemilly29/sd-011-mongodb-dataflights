@@ -3,6 +3,6 @@ db.voos.count({
     [
       { "aeroportoDestino.continente": "EUROPA" },
       { "aeroportoDestino.continente": "ÁSIA" },
-      { "aeroportoDestino.continente": "OCEANIA" }
-    ]
+      { "aeroportoDestino.continente": "OCEANIA" },
+    ],
 });
