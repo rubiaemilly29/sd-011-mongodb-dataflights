@@ -1,1 +1,1 @@
-db.dataFlights.find()
+db.dataFlights.find();
