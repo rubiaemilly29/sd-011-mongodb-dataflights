@@ -1,3 +1,3 @@
-db.voos.find(
+db.voos.count(
   { decolagens: { $gt: 20 } },
 );

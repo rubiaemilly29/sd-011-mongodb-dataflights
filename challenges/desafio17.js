@@ -1,3 +1,3 @@
-db.voos.find(
+db.voos.count(
   { natureza: { $in: ["Doméstica"] } },
 );
