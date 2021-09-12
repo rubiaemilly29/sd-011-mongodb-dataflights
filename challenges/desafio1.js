@@ -1,1 +1,1 @@
-// initial commit
+db.voos.count();
