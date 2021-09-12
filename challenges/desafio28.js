@@ -10,6 +10,6 @@ db.resumoVoos.insertOne(
       },
       ),
   },
-  );
+);
 
 db.resumoVoos.findOne({ empresa: latamBRASIL }, { empresa: 1, totalVoosDomesticos: 1, _id: 0 });
