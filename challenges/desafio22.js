@@ -4,7 +4,7 @@ db.voos.find({
     { "empresa.nome": { $eq: "AMERICAN AIRLINES" } },
 ],
   $and: [ 
-    { "aeroportoOrigem.sigla": {$eq: "SBGR" } },
-    { "aeroportoDestino.sigla": {$eq: "KJFK" } },
+    { "aeroportoOrigem.sigla": { $eq: "SBGR" } },
+    { "aeroportoDestino.sigla": { $eq: "KJFK" } },
 ] },
-{ vooId: 1, _id: 0 } ).limit(1);
+{ vooId: 1, _id: 0 }).limit(1);
