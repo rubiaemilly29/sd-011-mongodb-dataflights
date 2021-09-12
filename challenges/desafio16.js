@@ -1,3 +1,3 @@
 db.voos.find(
-  { natureza: { $in: ["Internacional" ] } }
+  { natureza: { $in: ["Internacional"] } },
 );
