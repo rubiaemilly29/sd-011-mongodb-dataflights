@@ -4,7 +4,7 @@ db.voos.find({ $and:
     [
         { litrosCombustivel: { $lt: 600 } },
         { "empresa.nome": { $nin: ["GOL", "AZUL"] } },
-    ] 
+    ],
 },
     { 
         _id: 0,
