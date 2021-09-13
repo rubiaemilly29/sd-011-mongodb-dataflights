@@ -5,4 +5,4 @@ db.voos.deleteMany({
     { "passageiros.pagos": { $lte: 10 } },
     { "passageiros.pagos": { $gte: 5 } },
   ],
-}).count();
+});
