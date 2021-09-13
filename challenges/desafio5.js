@@ -1,1 +1,1 @@
-db.voos.find({ vooId: { $in: [10, 12] } });
+db.voos.find({}, { vooId: 1 }).limit(10).skip(2);
