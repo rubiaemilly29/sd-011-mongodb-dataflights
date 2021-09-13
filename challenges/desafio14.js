@@ -1,1 +1,1 @@
-db.voos.count({ decolagens: { $nin: ["BRASIL"] } });
+db.voos.count({ decolagens: { $ne: ["BRASIL"] } });
