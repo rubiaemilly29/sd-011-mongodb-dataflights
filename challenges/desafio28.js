@@ -1,6 +1,7 @@
 const empresaLatamAB = "LATAM AIRLINES BRASIL";
-db.resumoVoos.insertOne({ empresa: empresaLatamAB, 
-totalVoosDomesticos: db.voos.count({ 
+db.resumoVoos.insertOne({ 
+  empresa: empresaLatamAB, 
+  totalVoosDomesticos: db.voos.count({ 
   "empresa.nome": empresaLatamAB, 
   natureza: "Doméstica" }), 
 });
