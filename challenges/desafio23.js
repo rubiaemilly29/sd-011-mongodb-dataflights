@@ -4,8 +4,8 @@ db.voos.find(
   },
   {
     vooId: 1,
-    litrosCombustivel:1,
-    _id: 0
+    litrosCombustivel: 1,
+    _id: 0,
   },
 )
 .limit(1);

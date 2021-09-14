@@ -5,11 +5,11 @@ db.resumoVoos.insertOne({
 
 db.resumoVoos.find(
   {
-    empresa: "PASSAREDO"
+    empresa: "PASSAREDO",
   },
   {
     empresa: 1,
     totalVoosDomesticos: 1,
-    _id: 0
-  }
+    _id: 0,
+  },
 );
